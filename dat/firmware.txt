@@ -1,0 +1,43 @@
+Firmware Descriptions
+---------------------
+
+PCI Firmware
+------------
+pci-2-1.bit                 USM v2 for PCI v2 w/o DDR
+pci-2-2.bit                 USM v2 for PCI v2 w/  DDR
+pci-2-3.bit                 USM v2 for PCI v3 w/  DDR
+pci-3-1.bit                 USM v3 for PCI v2 w/  DDR
+pci-3-2.bit                 USM v3 for PCI v3 w/  DDR
+
+Transmit Firmware
+-----------------
+txmaster-2-1.bit            USM v2 w/ 64 Element Tx, 40 MHz Tx Clock
+txmaster-2-2.bit            USM v2 w/ 64 Element Tx, 40 MHz Tx Clock, Digital CW
+txmaster-2-3.bit            USM v2 w/ 128 Element Tx, 80 MHz Tx Clock
+txmaster-3-1.bit            USM v3 w/ 128 Element Tx, 80 MHz Tx Clock, Analog CW
+txslave-2-1.bit             USM v2 w/ 64 Element Tx, 40 MHz Tx Clock
+txslave-2-2.bit             USM v2 w/ 64 Element Tx, 40 MHz Tx Clock, Digital CW
+txslave-2-3.bit             USM v2 w/ 128 Element Tx, 80 MHz Tx Clock
+txslave-3-1.bit             USM v3 w/ 128 Element Tx, 80 MHz Tx Clock, Analog CW
+
+Delay Line Firmware
+-------------------
+dl-2-1.bit                  USM v2 Regular Delay Lines w/  HPF
+dl-2-2.bit                  USM v2 Regular Delay Lines w/o HPF
+dl-2-3.bit                  USM v2 Incremental Counter Delay Lines
+dl-2-4.bit                  USM v2 Single Counter Delay Lines
+dl-3-1.bit                  USM v3 Regular Delay Lines w/  HPF
+dl-3-2.bit                  USM v3 Incremental Counter Delay Lines
+dl-3-3.bit                  USM v3 Single Counter Delay Lines
+
+Processing Firmware
+-------------------
+prepro-2-1.bit              USM v2 w/o DDR
+prepro-2-2.bit              USM v2 w/  DDR
+prepro-2-3.bit		    USM v2 w/  PCI v3
+prepro-3-1.bit              USM v3 w/  DDR
+
+DSP Firmware
+------------
+dsp-2-1.dat                 USM v2 DSP
+

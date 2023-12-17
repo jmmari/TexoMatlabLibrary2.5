@@ -1,0 +1,28 @@
+
+function ret = getProbeNumElements()
+%
+% function ret = getProbeNumElements()
+%
+% Returns number of elements of the probe on the
+activated connector connector on the
+%
+% (C) JMM, INSERM 2010.
+
+disp(' ')
+disp(' - Requesting elements number...')
+
+try
+
+    ret = calllib('TexoMatlabLibrary', 'getProbeNumElements');
+    
+    if ret > 0
+        disp(' - Elements number returned.');
+    else
+        disp('   - Call to function "getProbeNumElements" failed.');
+    end
+
+catch
+    disp('   - Call to function "getProbeNumElements" failed.');
+end
+
+

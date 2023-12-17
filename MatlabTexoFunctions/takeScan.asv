@@ -1,0 +1,30 @@
+
+function ret = getProbeName(duration)
+%
+% function ret = takeScan(duration)
+% function ret = takeScan()
+%
+% Takes a scan for the specified duration or, if no duration is specified,
+% for the default which is preset in the library
+%
+% (C) JMM, Imperial College 2007
+% Updated RC, Imperial College 2009
+
+disp(' ')
+disp(' - Requesting probe name on connector...')
+
+try
+
+    ret = calllib('TexoMatlabLibrary', 'getProbeName');
+
+    if ret ~= 0
+        errorCode(ret);
+    else
+        disp(' - Probe name put in workspace(as "TML_ProbeName").')
+    end
+
+catch
+    disp('   - Call to function "getProbeName" failed.');
+end
+
+

@@ -1,0 +1,32 @@
+
+function ret = getFrameRate(connector)
+%
+% function ret = activateProbeConnector(connector)
+% function ret = activateProbeConnector()
+%
+% Activates connector on the scanner (default is 0)
+%
+% (C) JMM, INSERM 2010.
+
+disp(' ')
+disp(' - Requesting frame rate...')
+
+try
+
+    if (nargin==0)  % If no duration has been specified as an argument
+        ret = calllib('TexoMatlabLibrary', 'getFrameRate', 0);
+    else            % If duration has been specified
+        ret = calllib('TexoMatlabLibrary', 'getFrameRate', connector);
+    end
+
+     if ret == 0
+        disp(' - Connector activated.');
+    else
+        disp('   - Call to function "getFrameRate" failed.');
+    end
+
+catch
+    disp('   - Call to function "getFrameRate" failed.');
+end
+
+

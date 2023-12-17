@@ -1,0 +1,80 @@
+InputSignalConfig = 0; // set here trigger on null: set to 0 to disable, to 1 to trigger lines, 2 to trig frames (images).
+
+OutputSignalConfig1 = 2; // set here output synch (BNC 1): set to 0 to disable, to 1 to get line synch, 2 to get frames (images) synch.
+
+OutputSignalConfig2 = 1; // set here output synch (BNC 2): set to 0 to disable, to 1 to get line synch, 2 to get frames (images) synch.
+
+scanDuration = 2000; // How long the scanner is run for the acquisition.
+
+power = 15;
+
+maxPositivePower = 15;
+
+maxNegativePower = 15;
+
+TGC = 1;
+
+probeConnector = 0;
+
+sectorialProbe = 0;
+
+numberFramesToSave = 1;
+
+dataFileName = currentRFframe.bin;
+
+txCenterElement = 315;
+
+txAperture = NUMCHANNELS;
+
+txFocusDistance = 30000;
+
+txAngle = 0;
+
+txCenterFrequency = 0; // set to 0 for m_texo.getProbeCenterFreq().
+
+posPulseShape = +-;
+
+negPulseShape = -+;
+
+txUseManualDelays = 0;
+
+txManualDelays = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0; // was false;
+
+txTableIndex = -1;
+
+txUseDeadElements = 0;
+
+rxCenterElement = 0;
+
+rxAperture = NUMCHANNELS; //-1 for NUMCHANNELS;
+
+rxAngle = 0;
+
+rxMaxApertureDepth = 60000;
+
+rxAcquisitionDepth = 100000; //was 20000;
+
+rxSpeedOfSound = 1540;
+
+rxChannelMask[0] = 4294967295;// was 0xFFFFFFFF;
+
+rxChannelMask[1] = 4294967295;// was 0xFFFFFFFF;
+
+rxApplyFocus = 1; // true;
+
+rxUseManualDelays = 0; // was false;
+
+rxManualDelays = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+
+rxTableIndex = -1;    
+
+rxCustomLineDuration = 0;
+
+rxDecimation = 1; //WAS 1;
+
+rxLgcValue = 0;
+
+rxTgcSel = 0;
+
+
+	
